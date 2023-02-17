@@ -13,4 +13,6 @@
 
 Для вывода массива на экран используется метод *PrintArray* который выводит в консоли элементы массива через пробел.
 
+Ссылка на диаграмму: [Block_diagram.png](https://github.com/Sergey-Lushin/FinalWork/blob/6b5c99f7609e7433ebc845a4c48fce4cffb3164c/Block_diagram.png "ссылка")
 
+Ссылка на программу: [Program.cs](https://github.com/Sergey-Lushin/FinalWork/blob/6b5c99f7609e7433ebc845a4c48fce4cffb3164c/Program.cs "ссылка")
