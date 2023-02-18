@@ -2,21 +2,29 @@
 Console.WriteLine("Введите массив строк через пробел");
 string text = Convert.ToString(Console.ReadLine()!);           
 string[] array = text.Split(' ');
-string[] newArray = new string[array.Length];
-ArrayOfThreeChar(array, newArray);
+string[] newArray = ArrayOfThreeChar(array);
+Console.WriteLine("Массив из строк, длина которых меньше либо равна 3 символа:");
 PrintArray(newArray);
 //------Metods---------
-void ArrayOfThreeChar(string[] arr1, string[] arr2)
+string[] ArrayOfThreeChar(string[] arr1)
 {
     int count = 0;
+    string[] tempArray = new string[arr1.Length];
     for (int i = 0; i < arr1.Length; i++)
     {
     if(arr1[i].Length <= 3)
         {
-        arr2[count] = arr1[i];
+        tempArray[count] = arr1[i];
         count++;
         }
     }
+    string[] newArray = new string[count];
+    for (int i = 0; i < newArray.Length; i++)
+    {
+        newArray[i] = tempArray[i];
+        count++;
+    }
+    return newArray;
 }
 void PrintArray(string[] array)
 {
