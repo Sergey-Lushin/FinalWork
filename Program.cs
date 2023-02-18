@@ -9,20 +9,22 @@ PrintArray(newArray);
 string[] ArrayOfThreeChar(string[] arr1)
 {
     int count = 0;
-    string[] tempArray = new string[arr1.Length];
     for (int i = 0; i < arr1.Length; i++)
     {
     if(arr1[i].Length <= 3)
         {
-        tempArray[count] = arr1[i];
         count++;
         }
     }
+    int count2 = 0;
     string[] newArray = new string[count];
-    for (int i = 0; i < newArray.Length; i++)
+    for (int j = 0; j < arr1.Length; j++)
     {
-        newArray[i] = tempArray[i];
-        count++;
+    if (arr1[j].Length <= 3)
+        {
+        newArray[count2] = arr1[j];
+        count2++;
+        }    
     }
     return newArray;
 }
